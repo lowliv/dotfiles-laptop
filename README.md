@@ -1,3 +1,4 @@
+# Default ISO Packages
 alsa-utils
 amd-ucode
 arch-install-scripts
@@ -165,7 +166,7 @@ github-cli
 piper
 udisks2
 
-#Custom Packages from local/repo
+# Custom Packages from aur
 opentabletdriver
 yay
 rofi-emoji-abi8
