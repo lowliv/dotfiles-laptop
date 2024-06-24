@@ -166,7 +166,7 @@ github-cli
 piper
 udisks2
 
-#Custom Packages from aur
+# Custom Packages from aur
 opentabletdriver
 yay
 rofi-emoji-abi8
