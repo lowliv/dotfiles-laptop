@@ -1,4 +1,4 @@
-#Default ISO Packages
+# Default ISO Packages
 alsa-utils
 amd-ucode
 arch-install-scripts
