@@ -7,33 +7,6 @@
  * =========================================================================== */
 
 /* -----------------------------------------------------------------------------
- * Keyframes
- * -------------------------------------------------------------------------- */
-
-@keyframes blink-warning {
-    70% {
-        color: white;
-    }
-
-    to {
-        color: white;
-        background-color: orange;
-    }
-}
-
-@keyframes blink-critical {
-    70% {
-      color: white;
-    }
-
-    to {
-        color: white;
-        background-color: red;
-    }
-}
-
-
-/* -----------------------------------------------------------------------------
  * Base styles
  * -------------------------------------------------------------------------- */
 
@@ -51,7 +24,7 @@
     background: #323232;
     color: white;
     font-family: Cantarell, Noto Sans, sans-serif;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 /* Each module */
@@ -89,13 +62,9 @@
 }
 
 #battery.warning.discharging {
-    animation-name: blink-warning;
-    animation-duration: 3s;
 }
 
 #battery.critical.discharging {
-    animation-name: blink-critical;
-    animation-duration: 2s;
 }
 
 #clock {
@@ -126,8 +95,6 @@
 
 #memory.critical {
     color: red;
-    animation-name: blink-critical;
-    animation-duration: 2s;
 }
 
 #mode {

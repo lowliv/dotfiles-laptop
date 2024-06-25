@@ -17,7 +17,7 @@
     "margin-left": 10,
     "margin-right": 10,
     "margin-top": 5,
-    "spacing": 2,
+    "spacing": 0,
     
     // If height property would be not present, it'd be calculated dynamically
 
@@ -34,8 +34,6 @@
         "cpu",
         "pulseaudio",
         "battery",
-        "tray",
-        "clock#date",
         "clock#time"
     ],
 
@@ -51,7 +49,7 @@
             "critical": 15
         },
         // Connected to AC
-        "format": "  {icon}  {capacity}%", // Icon: bolt
+        "format": " {icon}  {capacity}%", // Icon: bolt
         // Not connected to AC
         "format-discharging": "{icon}  {capacity}%",
         "format-icons": [
@@ -66,13 +64,13 @@
 
     "clock#time": {
         "interval": 1,
-        "format": "{:%H:%M:%S}",
+        "format": "{:%H:%M:%S} ",
         "tooltip": false
     },
 
     "clock#date": {
       "interval": 10,
-      "format": "  {:%e %b %Y}", // Icon: calendar-alt
+      "format": "  {:%e %b}", // Icon: calendar-alt
       "tooltip-format": "{:%e %B %Y}"
     },
 
@@ -106,7 +104,7 @@
 
     "network": {
         "interval": 5,
-        "format-wifi": "  {essid}  {signalStrength}%", // Icon: wifi
+        "format-wifi": "   {signalStrength}%", // Icon: wifi
         "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}"
@@ -123,9 +121,9 @@
         "persistent-workspaces": {
             "*": 5,
         },
-        "format": "{name}: {icon}",
+        "format": "{icon}",
         "format-icons": {
-            "1": "龜", // Icon: firefox-browser
+            "1": "", // Icon: firefox-browser
             "2": "", // Icon: mail
             "3": "", // Icon: code
             "4": "", // Icon: terminal
