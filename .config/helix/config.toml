@@ -1,8 +1,8 @@
-theme = "tokyonight_storm"
+theme = "catppuccin_moon"
 
 [editor]
 line-number = "relative"
-mouse = false
+mouse = true
 bufferline = "multiple"
 
 [editor.cursor-shape]

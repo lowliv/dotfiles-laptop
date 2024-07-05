@@ -145,8 +145,8 @@
             "car": "",
             "default": ["", ""],
         },
-        "scroll-up": "pulseaudio-control --volume-max 130 up",
-        "scroll-down": "pulseaudio-control --volume-max 130 down",
+        "scroll-up": "pulseaudio-control --volume-max 100 up",
+        "scroll-down": "pulseaudio-control --volume-max 100 down",
         "on-click": "pulseaudio-control togmute",
     },
 

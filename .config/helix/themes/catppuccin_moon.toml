@@ -1,0 +1,37 @@
+inherits = "catppuccin_macchiato"
+
+"ui.cursor.primary.insert" = { fg = "base", bg = "flamingo" }
+ 
+[palette]
+# catppuccin_macchiato colors w/ +20 saturation (HSL)
+# red = "#FB798C"
+# pink = "#FDB5EA"
+# green = "#9FE887"
+# yellow = "#F9D894"
+# blue = "#7FA9FF"
+# mauve = "#C597FF"
+# teal = "#7BE5D5"
+# sapphire = "#6DCAF4"
+# sky = "#83E1F1"
+# flamingo = "#F7BFBF"
+# rosewater = "#F9D7D1"
+# lavender = "#B0B7FF"
+# peach = "#FFA675"
+
+# Name-Matched Terminal Colors
+
+red = "#f7768e" #color1
+pink = "#ff7a93" #color9
+green = "#9ece6a" #color2
+yellow = "#e0af68" #color3
+blue = "#7aa2f7" #color4
+mauve = "#ad8ee6" #color5
+teal = "#b9f27c" #color10
+sapphire = "#449dab" #color6
+sky = "#0db9d7" #color14
+flamingo = "#bb9af7" #color13
+rosewater = "#F9D7D1" #colorN/A
+lavender = "#7da6ff" #color12 
+peach = "#ff9e64" #color11
+
+secondary_cursor_insert = "#B6A6A7"
