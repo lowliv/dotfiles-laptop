@@ -11,4 +11,4 @@ alias sx='startx'
 alias ls='ls --color=auto'
 alias ra='ranger'
 alias hx='helix'
-neofetch
+nitch
