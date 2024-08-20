@@ -4,7 +4,7 @@ number=$(ls -1q wallpapers | wc -l)
 n=$(shuf -i 1-$number -n 1)
 name=0
 echo $n
-find "/home/camacmi/wallpapers" | while read -r file; do
+find "$HOME/wallpapers" | while read -r file; do
   name="$file"
   echo "$file"
   echo "$name"
