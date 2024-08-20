@@ -1,0 +1,6 @@
+[submodule "nitch"]
+	path = nitch
+	url = https://github.com/ssleert/nitch.git
+[submodule ".config/ranger/colorschemes"]
+	path = .config/ranger/colorschemes
+	url = https://github.com/ranger/colorschemes
