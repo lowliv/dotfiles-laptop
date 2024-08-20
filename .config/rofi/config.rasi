@@ -12,79 +12,60 @@ configuration {
   icon-theme: "Papirus";
 }
 
-@theme "/dev/null"
+@theme "rounded-red-dark"
 
 * {
-  bg: #1e1e2e96;
-  bg-alt: #585b7096;
-  bg-selected: #31324496;
-
-  fg: #cdd6f4;
-  fg-alt: #7f849c;
-
-  
-  border: 0;
-  margin: 0;
-  padding: 0;
-  spacing: 0;
+  bg3:    #930F0FEE;
 }
 
 window {
-  width: 30%;
-  background-color: @bg;
-  border-radius: 5px;
-}
-
-element {
-  padding: 8 12;
-  background-color: transparent;
-  text-color: @fg-alt;
-}
-
-element selected {
-  text-color: @fg;
-  background-color: @bg-selected;
-}
-
-element-text {
-  background-color: transparent;
-  text-color: inherit;
-  vertical-align: 0.5;
-}
-
-element-icon {
-  size: 14;
-  padding: 0 10 0 0;
-  background-color: transparent;
-}
-
-entry {
-  padding: 12;
-  background-color: @bg-alt;
-  text-color: @fg;
+  border: 2px;
+  border-color: @bg3;
+  border-radius: 0px;
+  background-color: #24273a64;
 }
 
 inputbar {
-  children: [prompt, entry];
-  background-color: @bg;
+  background-color: transparent;
+  border:           0px;
+  border-radius:    0;
 }
 
 listview {
-  background-color: @bg;
-  columns: 1;
-  lines: 10;
+  margin: 0 0 0;
 }
 
-mainbox {
-  children: [inputbar, listview];
-  background-color: @bg;
+element {
+  padding:              0px 0px;
+  spacing:              0px;
+  border-radius:        0px;
 }
 
-prompt {
-  enabled: true;
-  padding: 12 0 0 12;
-  background-color: @bg-alt;
-  text-color: @fg;
+element normal active {
+  text-color:     @fg2;
 }
 
-/* vim: ft=sass
+element alternate active {
+  text-color:    @fg2;
+}
+
+element selected normal, element selected active {
+  background-color:     #930F0F50;
+}
+
+entry {
+  placeholder: "";
+}
+
+listview {
+  margin: 0px 0 0;
+}
+
+message {
+  margin: 0px 0 0;
+  border-radius: 0px;
+}
+
+textbox {
+  padding: 0px 0px;
+}

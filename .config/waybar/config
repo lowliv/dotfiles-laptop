@@ -49,9 +49,9 @@
             "critical": 15
         },
         // Connected to AC
-        "format": " {icon}  {capacity}%", // Icon: bolt
+        "format": " {icon}   {capacity}%", // Icon: bolt
         // Not connected to AC
-        "format-discharging": "{icon}  {capacity}%",
+        "format-discharging": "{icon}   {capacity}%",
         "format-icons": [
             "", // Icon: battery-full
             "", // Icon: battery-three-quarters
@@ -76,7 +76,7 @@
 
     "cpu": {
         "interval": 5,
-        "format": "  {usage}%", // Icon: microchip
+        "format": "   {usage}%", // Icon: microchip
         "states": {
           "warning": 70,
           "critical": 90
@@ -95,7 +95,7 @@
 
     "memory": {
         "interval": 5,
-        "format": "  {}%", // Icon: memory
+        "format": " {}%", // Icon: memory
         "states": {
             "warning": 70,
             "critical": 90
@@ -133,7 +133,7 @@
 
     "pulseaudio": {
         "scroll-step": 1,
-        "format": "{icon}  {volume}%",
+        "format": "{icon}   {volume}%",
         "format-bluetooth": "{icon}  {volume}%",
         "format-muted": " {volume}%",
         "format-icons": {
@@ -145,8 +145,8 @@
             "car": "",
             "default": ["", ""],
         },
-        "scroll-up": "pulseaudio-control --volume-max 100 up",
-        "scroll-down": "pulseaudio-control --volume-max 100 down",
+        "scroll-up": "wpctl set-volume @DEFAULT_SINK@ .01+",
+        "scroll-down": "wpctl set-volume @DEFAULT_SINK@ .01-",
         "on-click": "pulseaudio-control togmute",
     },
 
