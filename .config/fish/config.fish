@@ -12,7 +12,7 @@ if status is-interactive
     set -gx XDG_PUBLICSHARE_DIR "$HOME/public"
     set -gx XDG_TEMPLATES_DIR "$HOME/templates"
     set -gx XDG_VIDEOS_DIR "$HOME/videos"
+    set -gx SDL_VIDEODRVIER wayland "$HOME/applications/osu.AppImage"
     set -gx XDG_SESSION_TYPE x11 ./AdvandedDockingSystemDemo
-    fish_add_path -v ~/applications
-    fish_add_path -v ~/scripts
+    fish_add_path -v $HOME/bin
 end

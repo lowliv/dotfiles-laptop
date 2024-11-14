@@ -10,8 +10,8 @@ echo ""
 read -p "Use nerd font symbols? (y/n): " symbolsYN
 echo "Installation..."
 
-case $symbolsYN in
-  "y")
+case $symbolsYN in 
+    "y")
     wget $linkNerd
     chmod +x nitchNerd
     sudo mv nitchNerd /usr/local/bin/nitch

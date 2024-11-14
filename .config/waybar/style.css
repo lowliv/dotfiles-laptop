@@ -30,19 +30,20 @@
 /* Each module */
 #battery,
 #clock,
-#cpu,
+ #cpu,
 #custom-keyboard-layout,
 #memory,
 #mode,
 #network,
 #pulseaudio,
 #temperature,
+#custom-notifaction,
 #tray {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-
+  
 /* -----------------------------------------------------------------------------
  * Module styles
  * -------------------------------------------------------------------------- */
@@ -54,11 +55,10 @@
 }
 
 #battery.warning {
-    color: orange;
 }
 
 #battery.critical {
-    color: red;
+    color: #FF7A93;
 }
 
 #battery.warning.discharging {
@@ -90,11 +90,10 @@
 }
 
 #memory.warning {
-    color: orange;
 }
 
 #memory.critical {
-    color: red;
+    color: #FF7A93;
 }
 
 #mode {
@@ -150,17 +149,21 @@
 }
 
 #workspaces button.active {
-    background-color: #930f0f;
+    background-color: #f93357;
     color: white;
 }
 
 #workspaces button.focused {
     border-top: 2px #285577;
     color: white;
-    background-color: #285FFF;
+    background-color: #f93357;
 }
 
 #workspaces button.urgent {
     border-color: #c9545d;
     color: #c9545d;
+}
+
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
 }

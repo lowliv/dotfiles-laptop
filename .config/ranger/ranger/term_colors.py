@@ -23,10 +23,10 @@ class Default(ColorScheme):
 				if context.image:
 					fg = cyan
 				else:
-					fg =  magenta
+					fg = blue
 			if context.container:
 				attr |= bold
-				fg = cyan
+				fg = yellow
 			if context.directory:
 				attr |= normal
 				fg = red
@@ -38,11 +38,11 @@ class Default(ColorScheme):
 			if context.socket:
 				fg = magenta
 			if context.fifo or context.device:
-				fg = yellow
+				fg = cyan
 				if context.device:
 					attr |= bold
 			if context.link:
-				fg = context.good and cyan or magenta
+				fg = context.good and magenta
 			if context.tag_marker and not context.selected:
 				attr |= bold
 				if fg in (red, magenta):

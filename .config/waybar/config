@@ -28,13 +28,13 @@
         "hyprland/window"
     ],
     "modules-right": [
-        "temperature",
-        "network",
+
         "memory",
         "cpu",
         "pulseaudio",
         "battery",
-        "clock#time"
+        "clock#time",
+        "custom/notification",
     ],
 
 
@@ -49,23 +49,23 @@
             "critical": 15
         },
         // Connected to AC
-        "format": " {icon}   {capacity}%", // Icon: bolt
+        "format": "󰂄 {capacity}%", // Icon: bolt
         // Not connected to AC
-        "format-discharging": "{icon}   {capacity}%",
+        "format-discharging": "{icon} {capacity}%",
         "format-icons": [
-            "", // Icon: battery-full
-            "", // Icon: battery-three-quarters
-            "", // Icon: battery-half
-            "", // Icon: battery-quarter
-            ""  // Icon: battery-empty
+            "󰁺", // Icon: battery-full
+            "󰁼", // Icon: battery-three-quarters
+            "󰁾", // Icon: battery-half
+            "󰂀", // Icon: battery-quarter
+            "󰁹"  // Icon: battery-empty
         ],
         "tooltip": true
     },
 
     "clock#time": {
         "interval": 1,
-        "format": "{:%H:%M:%S} ",
-        "tooltip": false
+        "format": "󰥔  {:%H:%M}   ",
+        "tooltip-format": "{:%H:%M:%S}" 
     },
 
     "clock#date": {
@@ -113,14 +113,12 @@
 
     "hyprland/window": {
         "format": "{}",
-        "max-length": 120
+        "max-length": 60
     },
 
     "hyprland/workspaces": {
         "on-click": "activate",
-        "persistent-workspaces": {
-            "*": 5,
-        },
+        "all-outputs": "false",
         "format": "{icon}",
         "format-icons": {
             "1": "", // Icon: firefox-browser
@@ -134,8 +132,8 @@
     "pulseaudio": {
         "scroll-step": 1,
         "format": "{icon}   {volume}%",
-        "format-bluetooth": "{icon}  {volume}%",
-        "format-muted": " {volume}%",
+        "format-bluetooth": "{icon}  {volume}%",
+        "format-muted": "   {volume}%",
         "format-icons": {
             "headphones": "",
             "handsfree": "",
@@ -147,7 +145,7 @@
         },
         "scroll-up": "wpctl set-volume @DEFAULT_SINK@ .01+",
         "scroll-down": "wpctl set-volume @DEFAULT_SINK@ .01-",
-        "on-click": "pulseaudio-control togmute",
+        "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
     },
 
     "temperature": {
@@ -168,6 +166,22 @@
     "tray": {
         "icon-size": 21,
         "spacing": 10
-    }
+    },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon} {0}  ",
+    "format-icons": {
+      "normal": "",
+      "dnd": "",
+    },
+    "return-type": "json",
+    "exec-if": "which dunst",
+    "exec": "$HOME/.config/waybar/dunst-wb",
+    "scroll-step": 1,
+    "on-scroll-up": "dunstctl close-all",
+    "on-scroll-down": "dunstctl history-pop",
+    "on-click": "dunstctl set-paused toggle",
+    "on-click-right": "dunstctl history-clear",
+  },
 
 }

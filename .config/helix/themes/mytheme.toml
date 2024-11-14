@@ -1,0 +1,20 @@
+inherits = "catppuccin_macchiato"
+
+"ui.cursor.primary.insert" = { fg = "base", bg = "flamingo" }
+ 
+[palette]
+red = "#f5768f" #color1
+pink = "#ff7a93" #color9
+green = "#8bdb71" #color2
+yellow = "#f5b062" #color3
+blue = "#7aa2f7" #color4
+mauve = "#ad8ee6" #color5
+teal = "#7da8ff" #color10
+sapphire = "#51bbcc" #color6
+sky = "#56c5d6" #color14
+flamingo = "#ba99f7" #color13
+rosewater = "#f9d7d1" #colorN/A
+lavender = "#7da6ff" #color12 
+peach = "#ffb764" #color11
+
+secondary_cursor_insert = "#b6a6a7"

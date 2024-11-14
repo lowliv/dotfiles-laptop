@@ -6,8 +6,6 @@ name=0
 echo $n
 find "$HOME/wallpapers" | while read -r file; do
   name="$file"
-  echo "$file"
-  echo "$name"
   let ++t
   if [[ $t -eq $n ]]; then
     killall swaybg
