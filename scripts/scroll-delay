@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# File to store the last execution timestamp
+LAST_RUN_FILE="/tmp/last_run_timestamp"
+# Lock file to prevent concurrent execution
+LOCK_FILE="/tmp/scroll_action_lock"
+
+# Get the current timestamp in seconds
+current_time=$(date +%s)
+
+# Check if the lock file exists
+if [ -f "$LOCK_FILE" ]; then
+    # If the lock file exists, exit the script (prevent running concurrently)
+    exit 0
+else
+    # Create the lock file to prevent other instances from running
+    touch "$LOCK_FILE"
+    
+    # Check if the last execution file exists and has a valid timestamp
+    if [ -f "$LAST_RUN_FILE" ]; then
+        last_run_time=$(cat "$LAST_RUN_FILE")
+    else
+        last_run_time=0
+    fi
+
+    # Calculate the time difference
+    time_diff=$((current_time - last_run_time))
+
+    # If more than 1 second has passed, run the command
+    if [ $time_diff -ge 1 ]; then
+        # Run the command passed as argument
+        "$@"
+
+        # Update the last run timestamp
+        echo $current_time > "$LAST_RUN_FILE"
+    fi
+
+    # Remove the lock file to allow subsequent executions
+    rm -f "$LOCK_FILE"
+fi

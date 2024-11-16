@@ -23,14 +23,14 @@
 #waybar {
     background: #24273a;
     color: white;
-    font-family: Cantarell, Noto Sans, sans-serif;
+    font-family: JetBrains Mono;
     font-size: 12px;
 }
 
 /* Each module */
 #battery,
 #clock,
- #cpu,
+#cpu,
 #custom-keyboard-layout,
 #memory,
 #mode,
@@ -139,6 +139,14 @@
     font-weight: bold;
 }
 
+#custom-window {
+    font-weight: bold;
+}
+
+#custom-waybar-mpris {
+    font-weight: bold;
+}
+
 #workspaces button {
     border-top: 2px;
     /* To compensate for the top border and still have vertical centering */
@@ -165,5 +173,5 @@
 }
 
 #custom-notification {
-  font-family: "NotoSansMono Nerd Font";
+    color: #888888;
 }

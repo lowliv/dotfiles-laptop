@@ -1,3 +1,4 @@
+# REMOVE GPT_KEY BEFORE COMMITTING
 if status is-interactive
     # Commands to run in interactive sessions can go here
     nitch
@@ -13,6 +14,6 @@ if status is-interactive
     set -gx XDG_TEMPLATES_DIR "$HOME/templates"
     set -gx XDG_VIDEOS_DIR "$HOME/videos"
     set -gx SDL_VIDEODRVIER wayland "$HOME/applications/osu.AppImage"
-    set -gx XDG_SESSION_TYPE x11 ./AdvandedDockingSystemDemo
+    set -gx XDG_SESSION_TYPE wayland
     fish_add_path -v $HOME/bin
 end

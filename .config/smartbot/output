@@ -1,0 +1,4 @@
+arg.absnoconfirm = 0
+arg.mcq_or_frq = frq
+get_answercorrect_answer = To solve the initial-value problem, compute the matrix exponential of the coefficient matrix and multiply it by the initial condition vector.
+copy_answer

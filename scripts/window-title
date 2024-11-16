@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Get the output of hyprctl activewindow
+active_window_info=$(hyprctl activewindow)
+
+# Extract the title using grep and awk
+window_title=$(echo "$active_window_info" | grep -i 'title:' | awk -F 'title: ' '{print $2}')
+
+# Format the output in JSON for Waybar
+echo "{\"text\": \"$window_title\", \"class\": \"active-window-title\"}"
