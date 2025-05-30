@@ -8,7 +8,7 @@
     fg2:    #969696;
     fg3: #f9335750;
 
-    font:   "JetBrains Mono 14";
+    font:   "JetBrains Mono 18";
 
     background-color:   transparent;
     text-color:         @fg0;
@@ -20,7 +20,7 @@
 
 window {
     location:       center;
-    width:          480;
+    width:          540;
     border: 2px;
     border-radius: 0;
     border-color: @bg1;

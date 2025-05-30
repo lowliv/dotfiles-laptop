@@ -136,11 +136,11 @@
         "format-disconnected": "󰤮",
         "tooltip-format": "{essid}: {signalStrength}%",
         "format-icons": [
-             "<span color='#69ff94'>󰤯</span>", // green
-             "<span color='#2aa9ff'>󰤟</span>", // blue
-             "<span color='#f8f8f2'>󰤢</span>", // white
-             "<span color='#f8f8f2'>󰤥</span>", // white
-             "<span color='#ffffa5'>󰤨</span>" // yellow
+              "<span color='#F93357'>󰤯</span>",
+              "<span color='#F74D6C'>󰤟</span>",
+              "<span color='#F76580'>󰤢</span>",
+             "<span color='#F7F7F7'>󰤥</span>", // white
+             "<span color='#F7F7F7'>󰤨</span>" // yellow
          ]
     },
 
@@ -156,23 +156,23 @@
         "on-click": "activate",
         "all-outputs": "false",
         "hide-empty-text": true,
-        "format": "{windows}",
-        "format-window-separator": "  ",
+        "format": " {windows}",
+        "format-window-separator": " ",
         "window-rewrite-default": "",
         "window-rewrite": {
-          "class<kitty>": "", // Windows whose classes are "kitty"
-          "class<vlc.*>": "󰕼", // Windows whose classes are "vlc"
-          "class<.*bot.*>": "󰚩", // Windows whose classes contain "bot"
-          "class<thunderbird.*>": "", // Windows whose classes are "thunderbird"
-          "class<>": "󰓇", // Windows whose classes are empty (spotify)
-          "spotify": "󰓇", // Contains spotify
-          "class<.*obs.*>": "", // Windows whose classes are "obs"
-          "class<Osu.*>": "󰺶", // Windows whose classes are "Osu"
-          "class<gimp.*>": "", // Windows whose classes are "gimp"
-          "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
-          "class<firefox>": "", // Windows whose classes are "firefox"
-          "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
-          "class<firefox> title<.*mines.*>": "󰑴", // Windows whose class is "firefox" and title contains "mines". Note that "class" always comes first.
+          "class<kitty>": "  ", // Windows whose classes are "kitty"
+          "class<vlc.*>": "󰕼 ", // Windows whose classes are "vlc"
+          "class<.*bot.*>": "󰚩 ", // Windows whose classes contain "bot"
+          "class<thunderbird.*>": "  ", // Windows whose classes are "thunderbird"
+          "class<>": "󰓇 ", // Windows whose classes are empty (spotify)
+          "spotify": "󰓇 ", // Contains spotify
+          "class<.*obs.*>": "  ", // Windows whose classes are "obs"
+          "class<Osu.*>": "󰺶 ", // Windows whose classes are "Osu"
+          "class<gimp.*>": "  ", // Windows whose classes are "gimp"
+          "title<.*youtube.*>": " ", // Windows whose titles contain "youtube"
+          "class<firefox>": " ", // Windows whose classes are "firefox"
+          "class<firefox> title<.*GitHub.*>": " ", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
+          "class<firefox> title<.*Mines.*>": "󰑴 ", // Windows whose class is "firefox" and title contains "mines". Note that "class" always comes first.
           "foot": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
           "code": "󰨞",
         "format-icons": {
@@ -256,7 +256,7 @@
 
     "custom/waybar-mpris": {
         "return-type": "json",
-        "exec": "waybar-mpris --pause ' ' --play ' ' --order 'SYMBOL:ARTIST:ALBUM:TITLE'",
+        "exec": "waybar-mpris --pause ' ' --play ' '",
         "on-click": "waybar-mpris --send toggle",
         "tooltip": false,
         "hide-empty-text": true,

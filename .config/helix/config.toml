@@ -10,17 +10,23 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.statusline]
+
+[editor.lsp]
+display-inlay-hints = true
+display-progress-messages = true
+
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
 
 [keys.normal."space"]
 b = ":bn"
 B = "buffer_picker"
-f = [':sh if [[ -z "${ZELLIJ}" ]]; then exit; else zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash $HOME/.config/helix/ranger-pick open; fi']
+x = ":bc"
 
 [editor.file-picker]
-hidden = false
-ignore = false
+hidden = true
+ignore = true
 git-ignore = false
 git-global = false
 git-exclude = false

@@ -1,22 +1,22 @@
 {
-  "Prompts": {
-    "mcq_prompt": "You are reviewing a multiple choice quiz. An answer may be pre-selected but it could be wrong, so you should ignore it. Answer the multiple choice question by saying the correct answer choice and the number corresponding this answer choice if they were labeled sequentially starting with 1 at the top. Do not use parentheses, or brackets.",
-    "frq_prompt": "Answer the question in a short sentence."
-  },
-  "ButtonLabel": {
-    "ok_button": "OK",
-    "cancel_button": "Cancel"
-  },
-  "Style": {
-    "label": "QLabel { color: white; font-weight: bold; background-color: transparent; }",
-    "window": "background-color: #24273a",
-    "ok_button": "QPushButton { border-radius: 0px; background-color: #f93357; color: white; font-size: 16px; padding: 10px; border: none; }",
-    "cancel_button": "QPushButton { border-radius: 0px; background-color: #f93357; color: white; font-size: 16px; padding: 10px; border: none; }"
-  },
-  "Font": {
-    "font_name": "JetBrains Mono",
-    "font_size": 16,
-    "font_weight": "Bold"
-  },
-  "Model": "gpt-4o-mini"
+    "Prompts": {
+        "mcq_prompt": "You are reviewing a multiple choice quiz. An answer may be pre-selected but it could be wrong, so you should ignore it. Answer the multiple choice question by saying the correct answer choice and the number corresponding this answer choice if they were labeled sequentially starting with 1 at the top. Do not use parentheses, or brackets.",
+        "frq_prompt": "Answer the question in a short sentence."
+    },
+    "ButtonLabel": {
+        "ok_button": "OK",
+        "cancel_button": "Cancel"
+    },
+    "Style": {
+        "label": "QLabel { color: white; font-weight: bold; background-color: transparent; }",
+        "window": "background-color: #24273a",
+        "ok_button": "QPushButton { border-radius: 0px; background-color: #f93357; color: white; font-size: 16px; padding: 10px; border: none; }",
+        "cancel_button": "QPushButton { border-radius: 0px; background-color: #f93357; color: white; font-size: 16px; padding: 10px; border: none; }"
+    },
+    "Font": {
+        "font_name": "JetBrains Mono",
+        "font_size": 16,
+        "font_weight": "Bold"
+    },
+    "Model": "gpt-4o-mini"
 }
