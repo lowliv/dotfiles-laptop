@@ -1,17 +1,9 @@
-acpilight 1.2-3
 discord_arch_electron 1:0.0.94-1
-hyproled-git 0.1.0-2
-hyprshade 3.2.1-1
 hyprshot 1.3.0-1
-hyprwayland-scanner-git 0.4.2.r1.g500c81a9-1
 jmtpfs 0.5-3
 neofetch 7.1.0-2
 opentabletdriver 0.6.4.0-4
 pacgraph 20110629-8
-pyinstaller 6.10.0-2
-pyinstaller-hooks-contrib 2024.8-1
-python-altgraph 0.17.4-1
-python-pylsp-rope 0.1.16-1
 rofi-emoji-abi8 3.3.0-1
 sfml2 2.6.2-1
 simple-mtpfs 0.4.0-1

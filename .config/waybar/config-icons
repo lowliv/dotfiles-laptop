@@ -259,20 +259,20 @@
         "format": "{}"
     },
 
-    "custom/brightness": {
-        "tooltip-format": "{}",  
-        "format": " {icon}",
-        "format-icons": {
-            "very_low": "󰃝 ",
-            "low": "󰃞 ",
-            "medium": "󰃟 ",
-            "high": "󰃠 ",
-        },
-        "exec": "brightness-wb.sh",
-        "return-type": "json",
-        "on-scroll-up": "xbacklight -inc 2",
-        "on-scroll-down": "xbacklight -inc -2"
-    },
+//    "custom/brightness": {
+//        "tooltip-format": "{}",  
+//        "format": " {icon}",
+//        "format-icons": {
+//            "very_low": "󰃝 ",
+//            "low": "󰃞 ",
+//            "medium": "󰃟 ",
+//            "high": "󰃠 ",
+//        },
+//        "exec": "brightness-wb.sh",
+//        "return-type": "json",
+//        "on-scroll-up": "xbacklight -inc 2",
+//        "on-scroll-down": "xbacklight -inc -2"
+//    },
     
     "custom/bluetooth": {
         "tooltip-format": "{}",  

@@ -1,0 +1,11 @@
+1. install nim
+
+2. git clone https://github.com/unxsh/nitch.git
+
+3. move drawing.nim to nitch/src/funcs (overide default)
+
+4. cd nitch
+
+5. nimble build
+
+6. put nitch into bin
