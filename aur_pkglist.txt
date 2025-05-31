@@ -1,4 +1,3 @@
-discord_arch_electron 1:0.0.94-1
 hyprshot 1.3.0-1
 jmtpfs 0.5-3
 neofetch 7.1.0-2

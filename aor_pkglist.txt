@@ -1,6 +1,7 @@
 7zip
 acpi
 alsa-utils
+archiso
 base
 base-devel
 bash-language-server
@@ -13,6 +14,7 @@ broadcom-wl
 btop
 clang
 cpio
+discord
 dkms
 dosfstools
 dunst
